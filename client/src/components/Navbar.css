@@ -1,0 +1,77 @@
+.navbar {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 16px 0;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  color: white;
+  font-size: 24px;
+  font-weight: 800;
+  text-decoration: none;
+  letter-spacing: -0.5px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.navbar-brand::before {
+  content: '⚡';
+  font-size: 28px;
+}
+
+.navbar-brand:hover {
+  transform: translateY(-2px);
+  text-shadow: 0 4px 12px rgba(255, 255, 255, 0.4);
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-user {
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 8px 16px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.navbar .btn-outline {
+  color: white;
+  border-color: rgba(255, 255, 255, 0.4);
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.navbar .btn-outline:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border-color: white;
+}
+
+.navbar .btn-primary {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  padding: 10px 20px;
+  border: none;
+}
+
+.navbar .btn-primary:hover {
+  box-shadow: 0 6px 20px rgba(245, 87, 108, 0.4);
+}
